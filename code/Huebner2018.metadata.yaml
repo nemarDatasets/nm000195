@@ -1,0 +1,226 @@
+_dataset:
+  class: Huebner2018
+  code: Huebner2018
+  doi: 10.1109/MCI.2018.2807039
+  interval:
+  - -0.2
+  - 0.7
+  n_subjects: 12
+  paradigm: p300
+abstract: 'One of the fundamental challenges in brain-computer interfaces (BCIs) is to tune a brain signal decoder to reliably
+  detect a user''s intention. While information about the decoder can partially be transferred between subjects or sessions,
+  optimal decoding performance can only be reached with novel data from the current session. Thus, it is preferable to learn
+  from unlabeled data gained from the actual usage of the BCI application instead of conducting a calibration recording prior
+  to BCI usage. We review such unsupervised machine learning methods for BCIs based on event-related potentials of the electroencephalogram.
+  We present results of an online study with twelve healthy participants controlling a visual speller. Online performance
+  is reported for three completely unsupervised learning methods: (1) learning from label proportions, (2) an expectation-maximization
+  approach and (3) MIX, which combines the strengths of the two other methods. After a short ramp-up, we observed that the
+  MIX method not only defeats its two unsupervised competitors but even performs on par with a state-of-the-art regularized
+  linear discriminant analysis trained on the same number of data points and with full label access. With this online study,
+  we deliver the best possible proof in BCI that an unsupervised decoding method can in practice render a supervised method
+  unnecessary. This is possible despite skipping the calibration, without losing much performance and with the prospect of
+  continuous improvement over a session. Thus, our findings pave the way for a transition from supervised to unsupervised
+  learning methods in BCIs based on event-related potentials.'
+acquisition:
+  cap_manufacturer: EasyCap
+  channel_types:
+    eeg: 31
+    misc: 6
+  hardware: BrainAmp DC
+  impedance_threshold_kohm: 20.0
+  line_freq: 50.0
+  montage: extended 10-20
+  n_channels: 31
+  reference: nose
+  sampling_rate: 1000.0
+  sensor_type: Ag/AgCl
+  sensors:
+  - C3
+  - C4
+  - CP1
+  - CP2
+  - CP5
+  - CP6
+  - Cz
+  - EOGvu
+  - F10
+  - F3
+  - F4
+  - F7
+  - F8
+  - F9
+  - FC1
+  - FC2
+  - FC5
+  - FC6
+  - Fp1
+  - Fp2
+  - Fz
+  - O1
+  - O2
+  - P10
+  - P3
+  - P4
+  - P7
+  - P8
+  - P9
+  - Pz
+  - T7
+  - T8
+  - x_EMGl
+  - x_GSR
+  - x_Optic
+  - x_Pulse
+  - x_Respi
+  software: BBCI toolbox
+bci_application:
+  applications:
+  - speller
+  - communication
+  environment: controlled laboratory
+  online_feedback: true
+cross_validation:
+  cv_method: leave-one-character-out for offline analysis; online sequential testing
+  evaluation_type:
+  - online
+  - within_session
+  - unsupervised_learning
+data_structure:
+  n_blocks: 3
+  n_trials: 35
+  trials_context: '35 characters per block (one trial = spelling one character), 3 blocks per session (one block per unsupervised
+    algorithm: EM, LLP, MIX in pseudo-randomized order)'
+documentation:
+  associated_paper_doi: 10.1109/MCI.2018.2807039
+  contact_info:
+  - p.kindermans@tu-berlin.de
+  - michael.tangermann@blbt.uni-freiburg.de
+  country: DE
+  data_url: https://zenodo.org/record/5831879
+  doi: 10.5281/zenodo.192684
+  ethics_approval:
+  - University Medical Center Freiburg ethics committee
+  funding:
+  - BrainLinks-BrainTools Cluster of Excellence funded by the German Research Foundation (DFG), grant number EXC 1086
+  - bwHPC initiative, grant INST 39/963-1 FUGG
+  - European Union's Horizon 2020 research and innovation program under the Marie Sklodowska-Curie grant agreement NO 657679
+  - Special Research Fund of Ghent University
+  - DFG (DFG SPP 1527, MU 987/14-1)
+  - Federal Ministry for Education and Research (BMBF No. 2017-0-00451)
+  - Brain Korea 21 Plus Program by the Institute for Information & Communications Technology Promotion (IITP) grant (1IS14013A)
+    funded by the Korean government
+  institution: University of Freiburg
+  institution_address: Brain State Decoding Lab, University of Freiburg, Freiburg, GERMANY
+  institution_department: Brain State Decoding Lab
+  investigators:
+  - David Hübner
+  - Thibault Verhoeven
+  - Klaus-Robert Müller
+  - Pieter-Jan Kindermans
+  - Michael Tangermann
+  keywords:
+  - unsupervised learning
+  - brain-computer interface
+  - event-related potentials
+  - P300 speller
+  - expectation-maximization
+  - learning from label proportions
+  - MIX method
+  - EEG
+  license: CC-BY-4.0
+  publication_year: 2018
+  repository: Zenodo
+experiment:
+  class_labels:
+  - Target
+  - NonTarget
+  events:
+    NonTarget: 10001
+    Target: 10002
+  feedback_type: visual
+  instructions: copy-spelling task - spell German sentence 'Franzy jagt im Taxi quer durch das'
+  mode: online
+  n_classes: 2
+  paradigm: p300
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_presentation:
+    distance_to_screen_cm: '80'
+    highlighting_type: combination of brightness enhancement, rotation, enlargement and trichromatic grid overlay
+    isi_ms: '150'
+    screen_size_inches: '24'
+    soa_ms: '250'
+    stimulus_duration_ms: '100'
+  stimulus_type: modified matrix speller with flexible highlighting
+  study_design: 'Visual ERP copy-spelling task using a modified 6x6 grid extended with 10 # symbols as visual blanks, using
+    flexible highlighting scheme with two interleaved sequences to enable unsupervised learning methods (EM, LLP, MIX)'
+  tasks:
+  - copy-spelling
+  trial_duration: 17.0
+file_format: BrainVision
+methodology: 'Online study comparing three unsupervised learning methods (EM, LLP, MIX) for P300 speller. Twelve healthy volunteers
+  (8 female, 4 male, mean age 26, range 19-31 years) participated in a single session each. Subjects spelled the German sentence
+  ''Franzy jagt im Taxi quer durch das'' (35 characters) in three blocks, each using a different unsupervised algorithm in
+  pseudo-randomized order. Each trial (spelling one character) consisted of 68 highlighting events with 250 ms SOA and 100
+  ms stimulus duration (ISI=150 ms). The speller used a modified 6x6 grid with 36 normal characters extended with 10 # symbols
+  as visual blanks (total 46 symbols). Two interleaved highlighting sequences were used: S1 highlighted only normal characters,
+  S2 highlighted both normal characters and # symbols, creating different known target-to-non-target ratios to enable learning
+  from label proportions. Highlighting consisted of brightness enhancement, rotation, enlargement and trichromatic grid overlay.
+  Classifiers were randomly initialized at block start and updated after each trial. No labeled data was provided during online
+  session. Participants sat 80 cm from a 24-inch screen. EEG was recorded from 31 passive Ag/AgCl electrodes (EasyCap) placed
+  according to extended 10-20 system, with impedances kept below 20 kOhm. Signals were recorded and amplified by BrainAmp
+  DC at 1 kHz sampling rate using BBCI toolbox in Matlab. Data was bandpass filtered (0.5-8 Hz, 3rd order Chebyshev Type II),
+  downsampled to 100 Hz, epoched to [-200, 700] ms relative to stimulus onset, and baseline corrected using [-200, 0] ms interval.
+  Features were mean amplitudes of six time intervals ([50-120], [121-200], [201-280], [281-380], [381-530], [531-700] ms
+  post-stimulus) per channel. No artifact rejection was applied; participants were instructed to avoid artifacts. Performance
+  metrics: spelling accuracy and AUC for target vs. non-target discrimination. Results showed MIX method achieved ~80% accuracy
+  after ~7 characters (168 seconds, 476 epochs) and performed comparably to supervised regularized LDA trained on same amount
+  of labeled data after 10+ characters. Ethics approval was obtained from University Medical Center Freiburg. Participants
+  were compensated 8 Euros per hour for the ~3 hour session (including EEG setup).'
+paradigm_specific:
+  detected_paradigm: p300
+  isi_ms: 150.0
+  n_targets: 46
+  soa_ms: 250.0
+participants:
+  age_max: 31
+  age_mean: 26
+  age_min: 19
+  bci_experience: mixed
+  gender:
+    female: 8
+    male: 4
+  health_status: healthy
+  n_subjects: 12
+  species: human
+performance:
+  MIX_AUC_after_7_chars: 80.0
+  accuracy_percent: 80.0
+  characters_to_80_percent_accuracy: 7.0
+  epochs_to_80_percent_accuracy: 476.0
+  time_to_80_percent_accuracy_seconds: 168.0
+preprocessing:
+  data_state: raw
+runs_per_session: 1
+sessions:
+- '0'
+- '1'
+- '2'
+sessions_per_subject: 3
+signal_processing:
+  classifiers:
+  - EM (Expectation-Maximization)
+  - LLP (Learning from Label Proportions)
+  - MIX (mixture of EM and LLP)
+  - shrinkage-regularized LDA (Ledoit-Wolf)
+  - Bayesian least square regression
+  feature_extraction:
+  - mean amplitudes in six temporal intervals per channel
+tags:
+  modality:
+  - Visual
+  pathology:
+  - Healthy
+  type:
+  - Research
