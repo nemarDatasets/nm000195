@@ -1,0 +1,130 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "enriched",
+  "authors": {
+    "David Hübner": {},
+    "Thibault Verhoeven": {},
+    "Klaus-Robert Müller": {},
+    "Pieter-Jan Kindermans": {},
+    "Michael Tangermann": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1109/MCI.2018.2807039",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000195",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000195",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.5281/zenodo.5831879",
+      "identifier_type": "DOI",
+      "relation_type": "IsPublishedIn"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Special Research Fund of Ghent University"
+    },
+    {
+      "funder_name": "DFG",
+      "award_number": "EXC 1086",
+      "award_title": "BrainLinks-BrainTools Cluster of Excellence"
+    },
+    {
+      "funder_name": "DFG",
+      "award_number": "INST 39/963-1 FUGG",
+      "award_title": "bwHPC initiative"
+    },
+    {
+      "funder_name": "European Commission",
+      "award_number": "657679",
+      "award_title": "Marie Sklodowska-Curie grant agreement"
+    },
+    {
+      "funder_name": "DFG",
+      "award_number": "MU 987/14-1",
+      "award_title": "DFG SPP 1527"
+    },
+    {
+      "funder_name": "BMBF",
+      "award_number": "2017-0-00451"
+    },
+    {
+      "funder_name": "IITP",
+      "award_number": "1IS14013A",
+      "award_title": "Brain Korea 21 Plus Program"
+    }
+  ],
+  "title": "Mixture of LLP and EM for a visual matrix speller (ERP) dataset from",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "5.2 GB (361 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "This dataset comprises EEG recordings from a P300 visual matrix speller study comparing three unsupervised learning methods (expectation-maximization, learning from label proportions, and their combination) for brain-computer interface decoding. Twelve healthy participants performed online copy-spelling tasks using a modified 6×6 character grid with flexible highlighting schemes, recorded at 1000 Hz from 31 EEG channels. The study demonstrates that unsupervised learning methods can achieve performance comparable to supervised approaches without requiring calibration data.",
+  "methods_description": "Online study with 12 healthy participants (8 female, 4 male; mean age 26 years, range 19-31) performing P300 speller tasks. EEG was recorded at 1000 Hz from 31 channels (Ag/AgCl electrodes in extended 10-20 montage) using BrainAmp DC amplifier with nose reference. Participants spelled a 35-character German sentence in three blocks, each using a different unsupervised algorithm (EM, LLP, or MIX) in pseudo-randomized order. Visual stimuli consisted of a modified 6×6 grid with 46 symbols total, presented with 250 ms stimulus onset asynchrony and 100 ms stimulus duration. Two interleaved highlighting sequences with different target-to-non-target ratios enabled learning from label proportions.",
+  "keywords": [
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "P300 speller"
+    },
+    {
+      "term": "visual matrix speller"
+    },
+    {
+      "term": "speller"
+    },
+    {
+      "term": "unsupervised learning"
+    },
+    {
+      "term": "expectation-maximization"
+    },
+    {
+      "term": "learning from label proportions"
+    },
+    {
+      "term": "MIX method"
+    },
+    {
+      "term": "online BCI"
+    }
+  ],
+  "source_hash": "4db826086e4cc200f04f1a8cf2bae5bc5b0c048532c8e375bafcafcd8d22cce0"
+}
