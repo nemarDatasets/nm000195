@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000195-blue)](https://doi.org/10.82901/nemar.nm000195)
+
 # Mixture of LLP and EM for a visual matrix speller (ERP) dataset from
 
 Mixture of LLP and EM for a visual matrix speller (ERP) dataset from Hübner et al 2018 [1]_.
