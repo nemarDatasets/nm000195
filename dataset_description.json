@@ -1,55 +1,57 @@
 {
-	"Name": "Mixture of LLP and EM for a visual matrix speller (ERP) dataset from",
-	"BIDSVersion": "1.9.0",
-	"HEDVersion": "8.4.0",
-	"DatasetType": "derivative",
-	"License": "CC-BY-4.0",
-	"Authors": [
-		"David H\u00fcbner",
-		"Thibault Verhoeven",
-		"Klaus-Robert M\u00fcller",
-		"Pieter-Jan Kindermans",
-		"Michael Tangermann"
-	],
-	"Funding": [
-		"BrainLinks-BrainTools Cluster of Excellence funded by the German Research Foundation (DFG), grant number EXC 1086",
-		"bwHPC initiative, grant INST 39/963-1 FUGG",
-		"European Union's Horizon 2020 research and innovation program under the Marie Sklodowska-Curie grant agreement NO 657679",
-		"Special Research Fund of Ghent University",
-		"DFG (DFG SPP 1527, MU 987/14-1)",
-		"Federal Ministry for Education and Research (BMBF No. 2017-0-00451)",
-		"Brain Korea 21 Plus Program by the Institute for Information & Communications Technology Promotion (IITP) grant (1IS14013A) funded by the Korean government"
-	],
-	"EthicsApprovals": [
-		"University Medical Center Freiburg ethics committee"
-	],
-	"ReferencesAndLinks": [
-		"https://zenodo.org/record/5831879",
-		"10.1109/MCI.2018.2807039"
-	],
-	"GeneratedBy": [
-		{
-			"CodeURL": "https://github.com/NeuroTechX/moabb",
-			"Name": "moabb",
-			"Description": "Mother of All BCI Benchmarks",
-			"Version": "1.5.0"
-		}
-	],
-	"SourceDatasets": [
-		{
-			"DOI": "10.1109/MCI.2018.2807039",
-			"URL": "https://zenodo.org/record/5831879"
-		}
-	],
-	"Keywords": [
-		"unsupervised learning",
-		"brain-computer interface",
-		"event-related potentials",
-		"P300 speller",
-		"expectation-maximization",
-		"learning from label proportions",
-		"MIX method",
-		"EEG"
-	],
-	"PublicationYear": 2018
+  "Name": "Mixture of LLP and EM for a visual matrix speller (ERP) dataset from",
+  "BIDSVersion": "1.9.0",
+  "HEDVersion": "8.4.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "David Hübner",
+    "Thibault Verhoeven",
+    "Klaus-Robert Müller",
+    "Pieter-Jan Kindermans",
+    "Michael Tangermann"
+  ],
+  "Funding": [
+    "BrainLinks-BrainTools Cluster of Excellence funded by the German Research Foundation (DFG), grant number EXC 1086",
+    "bwHPC initiative, grant INST 39/963-1 FUGG",
+    "European Union's Horizon 2020 research and innovation program under the Marie Sklodowska-Curie grant agreement NO 657679",
+    "Special Research Fund of Ghent University",
+    "DFG (DFG SPP 1527, MU 987/14-1)",
+    "Federal Ministry for Education and Research (BMBF No. 2017-0-00451)",
+    "Brain Korea 21 Plus Program by the Institute for Information & Communications Technology Promotion (IITP) grant (1IS14013A) funded by the Korean government"
+  ],
+  "EthicsApprovals": [
+    "University Medical Center Freiburg ethics committee"
+  ],
+  "ReferencesAndLinks": [
+    "https://zenodo.org/record/5831879",
+    "10.1109/MCI.2018.2807039"
+  ],
+  "GeneratedBy": [
+    {
+      "CodeURL": "https://github.com/NeuroTechX/moabb",
+      "Name": "moabb",
+      "Description": "Mother of All BCI Benchmarks",
+      "Version": "1.5.0"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "10.1109/MCI.2018.2807039",
+      "URL": "https://zenodo.org/record/5831879"
+    }
+  ],
+  "Keywords": [
+    "unsupervised learning",
+    "brain-computer interface",
+    "event-related potentials",
+    "P300 speller",
+    "expectation-maximization",
+    "learning from label proportions",
+    "MIX method",
+    "EEG"
+  ],
+  "PublicationYear": 2018,
+  "DatasetDOI": "10.82901/nemar.nm000195",
+  "Version": "1.0.0"
 }
