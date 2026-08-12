@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Mixture of LLP and EM for a visual matrix speller (ERP) dataset from",
-  "description": "This dataset comprises EEG recordings from a P300 visual matrix speller study comparing three unsupervised learning methods (Expectation-Maximization, Learning from Label Proportions, and their combination MIX) for brain-computer interface decoding. Twelve healthy participants performed a copy-spelling task using a modified 6×6 character grid with flexible highlighting schemes, recorded at 1000 Hz from 31 EEG channels. The study demonstrates that unsupervised learning methods can achieve performance comparable to supervised approaches without requiring calibration data.",
-  "methods_description": "Online study with 12 healthy participants (8 female, 4 male; mean age 26, range 19-31 years) performing a P300 copy-spelling task. Participants spelled a 35-character German sentence across three blocks, each using a different unsupervised algorithm (EM, LLP, or MIX) in pseudo-randomized order. EEG was recorded at 1000 Hz from 31 channels (Ag/AgCl electrodes in extended 10-20 montage) using BrainAmp DC amplifier with nose reference. Visual stimuli were presented on a 24-inch screen at 80 cm distance with 250 ms stimulus onset asynchrony and 100 ms stimulus duration. A modified 6×6 grid with 10 additional # symbols was used with two interleaved highlighting sequences to enable unsupervised learning.",
+  "description": "This dataset comprises EEG recordings from a P300 visual matrix speller study comparing three unsupervised learning methods (Expectation-Maximization, Learning from Label Proportions, and their combination MIX) for brain-computer interface decoding. Twelve healthy participants performed a copy-spelling task using a modified 6×6 character grid with flexible highlighting schemes, recorded at 1000 Hz from 31 EEG channels. The study demonstrates that unsupervised learning methods can achieve performance comparable to supervised approaches without requiring calibration data. This is a BIDS-standardized derivative generated using the moabb (Mother of All BCI Benchmarks) framework, based on the original Hübner et al. 2018 dataset.",
+  "methods_description": "Online study with 12 healthy participants (8 female, 4 male; mean age 26 years, range 19-31) performing a P300 copy-spelling task. Participants spelled a 35-character German sentence across three blocks, each using a different unsupervised algorithm (EM, LLP, or MIX) in pseudo-randomized order. EEG was recorded at 1000 Hz from 31 channels (Ag/AgCl electrodes in extended 10-20 montage) using BrainAmp DC amplifier with nose reference. Visual stimuli were presented on a 24-inch screen at 80 cm distance with 250 ms stimulus onset asynchrony and 100 ms stimulus duration. A modified 6×6 grid with 10 additional # symbols was used with two interleaved highlighting sequences to enable unsupervised learning.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -21,7 +21,7 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "Event-Related Potentials, P300",
+      "term": "Evoked Potentials, P300",
       "subject_scheme": "MeSH",
       "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
@@ -36,6 +36,9 @@
       "term": "matrix speller"
     },
     {
+      "term": "visual speller"
+    },
+    {
       "term": "unsupervised learning"
     },
     {
@@ -45,7 +48,10 @@
       "term": "learning from label proportions"
     },
     {
-      "term": "MIX method"
+      "term": "moabb"
+    },
+    {
+      "term": "Mother of All BCI Benchmarks"
     }
   ],
   "related_identifiers": [
@@ -60,14 +66,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000195",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.5281/zenodo.5831879",
       "identifier_type": "DOI",
       "relation_type": "IsPublishedIn"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000195",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -110,15 +116,16 @@
     "eeg"
   ],
   "sizes": [
-    "5.2 GB (361 files)"
+    "5.2 GB (721 files)"
   ],
   "formats": [
     ".bdf",
     ".json",
     ".md",
     ".tsv",
+    ".vhdr",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "1897d7a86ed634c9f36299696f53fea780b203551c490dc0d756500decdf4e6b"
+  "source_hash": "0f807cbf2e0e3175c63261d1ddea801f78f0a190045f13f5616b11da05ff4619"
 }
