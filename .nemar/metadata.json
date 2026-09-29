@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Mixture of LLP and EM for a visual matrix speller (ERP) dataset from",
-  "description": "This dataset comprises EEG recordings from a P300 visual matrix speller study comparing three unsupervised learning methods (Expectation-Maximization, Learning from Label Proportions, and their combination MIX) for brain-computer interface decoding. Twelve healthy participants performed a copy-spelling task using a modified 6×6 character grid extended with 10 # symbols as visual blanks (46 total symbols), recorded at 1000 Hz from 31 EEG channels. The study demonstrates that unsupervised learning methods can achieve performance comparable to supervised approaches without requiring calibration data.",
-  "methods_description": "Online study with 12 healthy participants (8 female, 4 male; mean age 26 years, range 19-31) performing a P300 copy-spelling task. Participants spelled a 35-character German sentence across three blocks, each using a different unsupervised algorithm (EM, LLP, or MIX) in pseudo-randomized order. EEG was recorded at 1000 Hz from 31 channels (Ag/AgCl electrodes in extended 10-20 montage) using BrainAmp DC amplifier with nose reference. Visual stimuli were presented on a 24-inch screen at 80 cm distance with 250 ms stimulus onset asynchrony and 100 ms stimulus duration. A modified 6×6 grid with 10 additional # symbols was used with two interleaved highlighting sequences to enable unsupervised learning.",
+  "description": "EEG recordings from an online study with twelve healthy participants using a visual matrix P300 speller with a modified 6x6 grid extended by visual blanks. Three fully unsupervised decoding methods were compared: learning from label proportions (LLP), expectation-maximization (EM), and their mixture (MIX). The data support research on calibration-free brain-computer interfaces based on event-related potentials.",
+  "methods_description": "Twelve healthy volunteers copy-spelled a 35-character German sentence in three blocks, each using a different unsupervised algorithm in pseudo-randomized order. Stimuli were presented with a 250 ms SOA and 100 ms stimulus duration, using two interleaved highlighting sequences. EEG was recorded with 31 Ag/AgCl channels (BrainAmp DC, EasyCap) at 1000 Hz, referenced to the nose.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -15,25 +15,18 @@
   },
   "keywords": [
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
-    },
-    {
       "term": "EEG"
     },
     {
-      "term": "P300 speller"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "matrix speller"
+      "term": "event-related potentials"
+    },
+    {
+      "term": "P300 speller"
     },
     {
       "term": "unsupervised learning"
@@ -45,7 +38,7 @@
       "term": "learning from label proportions"
     },
     {
-      "term": "hybrid learning method"
+      "term": "MIX method"
     }
   ],
   "related_identifiers": [
@@ -68,6 +61,11 @@
       "identifier": "https://nemar.org/dataset/nm000195",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.5281/zenodo.192684",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "funding_references": [
@@ -75,17 +73,16 @@
       "funder_name": "Special Research Fund of Ghent University"
     },
     {
-      "funder_name": "DFG",
+      "funder_name": "German Research Foundation (DFG)",
       "award_number": "EXC 1086",
       "award_title": "BrainLinks-BrainTools Cluster of Excellence"
     },
     {
-      "funder_name": "DFG",
-      "award_number": "INST 39/963-1 FUGG",
-      "award_title": "bwHPC initiative"
+      "funder_name": "bwHPC initiative",
+      "award_number": "INST 39/963-1 FUGG"
     },
     {
-      "funder_name": "European Commission",
+      "funder_name": "European Union's Horizon 2020",
       "award_number": "657679",
       "award_title": "Marie Sklodowska-Curie grant agreement"
     },
@@ -94,15 +91,15 @@
       "award_title": "Special Research Fund"
     },
     {
-      "funder_name": "DFG",
+      "funder_name": "German Research Foundation (DFG)",
       "award_number": "SPP 1527, MU 987/14-1"
     },
     {
-      "funder_name": "BMBF",
+      "funder_name": "Federal Ministry for Education and Research (BMBF)",
       "award_number": "2017-0-00451"
     },
     {
-      "funder_name": "IITP",
+      "funder_name": "Institute for Information & Communications Technology Promotion (IITP)",
       "award_number": "1IS14013A",
       "award_title": "Brain Korea 21 Plus Program"
     }
@@ -113,7 +110,7 @@
     "eeg"
   ],
   "sizes": [
-    "5.2 GB (721 files)"
+    "4.81 GB (721 files)"
   ],
   "formats": [
     ".bdf",
