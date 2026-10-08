@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Mixture of LLP and EM for a visual matrix speller (ERP) dataset from",
-  "description": "EEG recordings from an online study with twelve healthy participants using a visual matrix P300 speller with a modified 6x6 grid extended by visual blanks. Three fully unsupervised decoding methods were compared: learning from label proportions (LLP), expectation-maximization (EM), and their mixture (MIX). The data support research on calibration-free brain-computer interfaces based on event-related potentials.",
-  "methods_description": "Twelve healthy volunteers copy-spelled a 35-character German sentence in three blocks, each using a different unsupervised algorithm in pseudo-randomized order. Stimuli were presented with a 250 ms SOA and 100 ms stimulus duration, using two interleaved highlighting sequences. EEG was recorded with 31 Ag/AgCl channels (BrainAmp DC, EasyCap) at 1000 Hz, referenced to the nose.",
+  "description": "EEG recordings from an online visual matrix speller (P300 ERP) study with twelve healthy participants, comparing three fully unsupervised decoding methods: learning from label proportions (LLP), expectation-maximization (EM), and their combination (MIX). Participants copy-spelled a German sentence in three blocks, one per algorithm, using a modified 6x6 grid extended with visual blanks. The dataset supports research on calibration-free brain-computer interfaces based on event-related potentials.",
+  "methods_description": "31-channel EEG recorded at 1000 Hz with BrainAmp DC amplifiers and EasyCap Ag/AgCl electrodes (nose reference). Participants spelled 35 characters in three blocks. Each character involved 68 highlighting events with 250 ms SOA and 100 ms stimulus duration, using two interleaved highlighting sequences that created known target to non-target ratios for unsupervised learning.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -23,7 +23,9 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "event-related potentials"
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
       "term": "P300 speller"
@@ -32,13 +34,10 @@
       "term": "unsupervised learning"
     },
     {
-      "term": "expectation-maximization"
-    },
-    {
       "term": "learning from label proportions"
     },
     {
-      "term": "MIX method"
+      "term": "expectation-maximization"
     }
   ],
   "related_identifiers": [
@@ -82,7 +81,7 @@
       "award_number": "INST 39/963-1 FUGG"
     },
     {
-      "funder_name": "European Union's Horizon 2020",
+      "funder_name": "European Union Horizon 2020",
       "award_number": "657679",
       "award_title": "Marie Sklodowska-Curie grant agreement"
     },
@@ -91,7 +90,7 @@
       "award_title": "Special Research Fund"
     },
     {
-      "funder_name": "German Research Foundation (DFG)",
+      "funder_name": "DFG",
       "award_number": "SPP 1527, MU 987/14-1"
     },
     {
@@ -121,5 +120,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "d0635377c418c944440f701a5f39c9f274ad5a50dd994398cbe58a1d2b584d05"
+  "source_hash": "96aea75876e17075bf01ec99742c6b3b3a12e6c145d78624fb2b23665a94d147"
 }
