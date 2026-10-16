@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "Mixture of LLP and EM for a visual matrix speller (ERP) dataset from",
-  "description": "EEG recordings from an online visual matrix speller (P300 ERP) study with twelve healthy participants, comparing three fully unsupervised decoding methods: learning from label proportions (LLP), expectation-maximization (EM), and their combination (MIX). Participants copy-spelled a German sentence in three blocks, one per algorithm, using a modified 6x6 grid extended with visual blanks. The dataset supports research on calibration-free brain-computer interfaces based on event-related potentials.",
-  "methods_description": "31-channel EEG recorded at 1000 Hz with BrainAmp DC amplifiers and EasyCap Ag/AgCl electrodes (nose reference). Participants spelled 35 characters in three blocks. Each character involved 68 highlighting events with 250 ms SOA and 100 ms stimulus duration, using two interleaved highlighting sequences that created known target to non-target ratios for unsupervised learning.",
+  "description": "EEG recordings from an online study with twelve healthy participants using a visual matrix speller (P300 event-related potential paradigm) to compare unsupervised decoding methods. The methods were learning from label proportions (LLP), expectation-maximization (EM), and their combination (MIX). Participants copy-spelled a German sentence in three blocks, one per algorithm, without a calibration recording. The dataset supports research on unsupervised learning for brain-computer interfaces.",
+  "methods_description": "31-channel EEG was recorded at 1000 Hz with a BrainAmp DC amplifier and Ag/AgCl electrodes in an extended 10-20 montage, with a nose reference. Participants spelled 35 characters in three blocks on a modified 6x6 matrix speller extended with 10 '#' blanks. Two interleaved highlighting sequences were used, with 250 ms SOA and 100 ms stimulus duration.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -18,17 +18,19 @@
       "term": "EEG"
     },
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+      "term": "brain-computer interface"
     },
     {
-      "term": "Event-Related Potentials, P300",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+      "term": "event-related potentials"
     },
     {
       "term": "P300 speller"
+    },
+    {
+      "term": "P300"
+    },
+    {
+      "term": "copy-spelling"
     },
     {
       "term": "unsupervised learning"
@@ -38,6 +40,9 @@
     },
     {
       "term": "expectation-maximization"
+    },
+    {
+      "term": "MIX method"
     }
   ],
   "related_identifiers": [
@@ -86,10 +91,6 @@
       "award_title": "Marie Sklodowska-Curie grant agreement"
     },
     {
-      "funder_name": "Ghent University",
-      "award_title": "Special Research Fund"
-    },
-    {
       "funder_name": "DFG",
       "award_number": "SPP 1527, MU 987/14-1"
     },
@@ -109,16 +110,18 @@
     "eeg"
   ],
   "sizes": [
-    "4.81 GB (721 files)"
+    "8.86 GB (1441 files)"
   ],
   "formats": [
     ".bdf",
+    ".eeg",
     ".json",
     ".md",
     ".tsv",
     ".vhdr",
+    ".vmrk",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "96aea75876e17075bf01ec99742c6b3b3a12e6c145d78624fb2b23665a94d147"
+  "source_hash": "9fece260fefecde2a3bc7480b15fcfab96c2874647e98b3298cf7b762b6b6fa0"
 }
